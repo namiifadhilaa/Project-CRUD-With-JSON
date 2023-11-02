@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/top_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-20sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-180dp">
+        <FrameLayout
+            android:id="@+id/b1"
+            android:layout_width="80dp"
+            android:layout_height="49dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="#2C2F56">
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="80dp"
+                android:layout_height="49dp"
+                android:backgroundTint="#2C2F56"
+                android:layout_gravity="center_horizontal"
+                android:text="ADD"
+                android:textSize="12dp"
+                android:fontFamily="@font/sora_semibold"
+                android:textColor="@color/white"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/b2"
+            android:layout_toRightOf="@+id/b1"
+            android:layout_width="120dp"
+            android:layout_height="49dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="#2C2F56"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <Button
+                android:id="@+id/buttonView"
+                android:layout_width="120dp"
+                android:layout_height="49dp"
+                android:backgroundTint="#2C2F56"
+                android:layout_gravity="center_horizontal"
+                android:text="LIST VIEW"
+                android:onClick="list"
+                android:textSize="12dp"
+                android:fontFamily="@font/sora_semibold"
+                android:textColor="@color/white"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/b3"
+            android:layout_toRightOf="@+id/b2"
+            android:layout_width="90dp"
+            android:layout_height="49dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="#2C2F56">
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="90dp"
+                android:layout_height="49dp"
+                android:backgroundTint="#2C2F56"
+                android:layout_gravity="center_horizontal"
+                android:text="EXIT"
+                android:textSize="12dp"
+                android:fontFamily="@font/sora_semibold"
+                android:textColor="@color/white"
+                android:onClick="exit"/>
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIEW DATA"
+        android:fontFamily="@font/sora_semibold"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/sora_semibold"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/gaji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:fontFamily="@font/sora_semibold"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:text=""
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INPUT DATA"
+        android:fontFamily="@font/sora_semibold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"/>
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#D6DFF4"
+        android:hint="Masukkan Nama Pegawai"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:fontFamily="@font/sorareguler"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape"
+        android:id="@+id/editNama" />
+
+
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#D6DFF4"
+        android:hint="Masukkan Gaji Pegawai"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:fontFamily="@font/sorareguler"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape"
+        android:id="@+id/editGaji" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+
+        <FrameLayout
+            android:id="@+id/b10"
+            android:layout_width="80dp"
+            android:layout_height="49dp"
+            android:backgroundTint="#2C2F56">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="49dp"
+                android:backgroundTint="#2C2F56"
+                android:layout_gravity="center_horizontal"
+                android:text="CREATE"
+                android:textSize="12dp"
+                android:fontFamily="@font/sora_semibold"
+                android:textColor="@color/white"
+                android:id="@+id/createButton" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/b11"
+            android:layout_toRightOf="@id/b10"
+            android:layout_width="80dp"
+            android:layout_height="49dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="#2C2F56">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="49dp"
+                android:backgroundTint="#2C2F56"
+                android:layout_gravity="center_horizontal"
+                android:text="READ"
+                android:textSize="12dp"
+                android:fontFamily="@font/sora_semibold"
+                android:textColor="@color/white"
+                android:id="@+id/readButton"
+                android:onClick="bersihkan"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/b15"
+            android:layout_toRightOf="@id/b11"
+            android:layout_width="80dp"
+            android:layout_height="49dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#2C2F56">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="49dp"
+                android:backgroundTint="#2C2F56"
+                android:layout_gravity="center_horizontal"
+                android:text="UPDATE"
+                android:textSize="12dp"
+                android:fontFamily="@font/sora_semibold"
+                android:textColor="@color/white"
+                android:id="@+id/updateButton"
+                android:onClick="bersihkan"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/b18"
+            android:layout_toRightOf="@id/b15"
+            android:layout_width="80dp"
+            android:layout_height="49dp"
+            android:backgroundTint="#2C2F56">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="49dp"
+                android:backgroundTint="#2C2F56"
+                android:layout_gravity="center_horizontal"
+                android:text="DELETE"
+                android:textSize="12dp"
+                android:fontFamily="@font/sora_semibold"
+                android:textColor="@color/white"
+                android:id="@+id/deleteButton"
+                android:onClick="bersihkan"/>
+
+        </FrameLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
